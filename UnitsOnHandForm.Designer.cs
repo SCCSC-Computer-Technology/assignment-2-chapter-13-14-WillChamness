@@ -118,7 +118,7 @@ namespace William_Chamness_206_assignment2
             this.maximumUnitsLabel.Location = new System.Drawing.Point(273, 283);
             this.maximumUnitsLabel.Name = "maximumUnitsLabel";
             this.maximumUnitsLabel.Size = new System.Drawing.Size(81, 13);
-            this.maximumUnitsLabel.TabIndex = 2;
+            this.maximumUnitsLabel.TabIndex = 3;
             this.maximumUnitsLabel.Text = "Maximum Units:";
             // 
             // minimumUnitsTextbox
@@ -126,7 +126,7 @@ namespace William_Chamness_206_assignment2
             this.minimumUnitsTextbox.Location = new System.Drawing.Point(360, 254);
             this.minimumUnitsTextbox.Name = "minimumUnitsTextbox";
             this.minimumUnitsTextbox.Size = new System.Drawing.Size(100, 20);
-            this.minimumUnitsTextbox.TabIndex = 3;
+            this.minimumUnitsTextbox.TabIndex = 2;
             // 
             // maximumUnitsTextbox
             // 
@@ -140,7 +140,7 @@ namespace William_Chamness_206_assignment2
             this.clearButton.Location = new System.Drawing.Point(632, 415);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
-            this.clearButton.TabIndex = 5;
+            this.clearButton.TabIndex = 6;
             this.clearButton.Text = "C&lear";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
@@ -151,7 +151,7 @@ namespace William_Chamness_206_assignment2
             this.exitButton.Location = new System.Drawing.Point(551, 415);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
-            this.exitButton.TabIndex = 6;
+            this.exitButton.TabIndex = 5;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
             // 
