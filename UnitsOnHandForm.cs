@@ -64,5 +64,13 @@ namespace William_Chamness_206_assignment2
             // display the result
             productDBDataGrid.DataSource = result;
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            productDBDataGrid.DataSource = db.Products.OrderBy((product) => product.Units_On_Hand);
+            minimumUnitsTextbox.Text = "";
+            maximumUnitsTextbox.Text = "";
+            this.ActiveControl = minimumUnitsTextbox;
+        }
     }
 }

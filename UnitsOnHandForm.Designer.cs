@@ -31,13 +31,13 @@ namespace William_Chamness_206_assignment2
         {
             this.components = new System.ComponentModel.Container();
             this.productDBDataGrid = new System.Windows.Forms.DataGridView();
-            this.productDBDataSet = new William_Chamness_206_assignment2.ProductDBDataSet();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productTableAdapter = new William_Chamness_206_assignment2.ProductDBDataSetTableAdapters.ProductTableAdapter();
             this.productNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitsOnHandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productDBDataSet = new William_Chamness_206_assignment2.ProductDBDataSet();
+            this.productTableAdapter = new William_Chamness_206_assignment2.ProductDBDataSetTableAdapters.ProductTableAdapter();
             this.minimumUnitsLabel = new System.Windows.Forms.Label();
             this.maximumUnitsLabel = new System.Windows.Forms.Label();
             this.minimumUnitsTextbox = new System.Windows.Forms.TextBox();
@@ -46,8 +46,8 @@ namespace William_Chamness_206_assignment2
             this.exitButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // productDBDataGrid
@@ -64,20 +64,6 @@ namespace William_Chamness_206_assignment2
             this.productDBDataGrid.Name = "productDBDataGrid";
             this.productDBDataGrid.Size = new System.Drawing.Size(543, 150);
             this.productDBDataGrid.TabIndex = 0;
-            // 
-            // productDBDataSet
-            // 
-            this.productDBDataSet.DataSetName = "ProductDBDataSet";
-            this.productDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.productDBDataSet;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // productNumberDataGridViewTextBoxColumn
             // 
@@ -102,6 +88,20 @@ namespace William_Chamness_206_assignment2
             this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
             this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.productDBDataSet;
+            // 
+            // productDBDataSet
+            // 
+            this.productDBDataSet.DataSetName = "ProductDBDataSet";
+            this.productDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // minimumUnitsLabel
             // 
@@ -143,6 +143,7 @@ namespace William_Chamness_206_assignment2
             this.clearButton.TabIndex = 5;
             this.clearButton.Text = "C&lear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -183,8 +184,8 @@ namespace William_Chamness_206_assignment2
             this.Text = "UnitsOnHandForm";
             this.Load += new System.EventHandler(this.UnitsOnHandForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
