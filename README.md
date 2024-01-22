@@ -13,4 +13,4 @@ The result is sorted by units on hand.
 
 ## Search by price
 A third form contains a place to search for product price. Input a minimum and maximum price to search for. The result
-is sorted by units on hand.
+is sorted by price.
