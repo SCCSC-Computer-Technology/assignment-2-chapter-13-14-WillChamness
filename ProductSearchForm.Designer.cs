@@ -162,6 +162,7 @@ namespace William_Chamness_206_assignment2
             // 
             // cancelButton
             // 
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Location = new System.Drawing.Point(551, 415);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
@@ -194,6 +195,7 @@ namespace William_Chamness_206_assignment2
             this.unitsOnHandToolStripMenuItem.Name = "unitsOnHandToolStripMenuItem";
             this.unitsOnHandToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.unitsOnHandToolStripMenuItem.Text = "Units on hand";
+            this.unitsOnHandToolStripMenuItem.Click += new System.EventHandler(this.unitsOnHandToolStripMenuItem_Click);
             // 
             // priceToolStripMenuItem
             // 
