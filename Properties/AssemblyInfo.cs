@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WilliamChamness-CPT-206-assignment2")]
+[assembly: AssemblyTitle("William-Chamness-206-assignment2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WilliamChamness-CPT-206-assignment2")]
+[assembly: AssemblyProduct("William-Chamness-206-assignment2")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("844616e6-2e68-4f02-ab65-47e1c0166886")]
+[assembly: Guid("4bbd2977-e4f9-4021-a25a-f707cee4f231")]
 
 // Version information for an assembly consists of the following four values:
 //

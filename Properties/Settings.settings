@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WilliamChamness_CPT_206_assignment2.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="William_Chamness_206_assignment2.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="ProductDBConnectionString" Type="(Connection string)" Scope="Application">

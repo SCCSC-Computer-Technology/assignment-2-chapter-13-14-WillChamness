@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WilliamChamness_CPT_206_assignment2 {
+namespace William_Chamness_206_assignment2 {
     
     
     /// <summary>
@@ -671,7 +671,7 @@ namespace WilliamChamness_CPT_206_assignment2 {
         }
     }
 }
-namespace WilliamChamness_CPT_206_assignment2.ProductDBDataSetTableAdapters {
+namespace William_Chamness_206_assignment2.ProductDBDataSetTableAdapters {
     
     
     /// <summary>
@@ -838,7 +838,7 @@ SELECT Product_Number, Description, Units_On_Hand, Price FROM Product WHERE (Pro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WilliamChamness_CPT_206_assignment2.Properties.Settings.Default.ProductDBConnectionString;
+            this._connection.ConnectionString = global::William_Chamness_206_assignment2.Properties.Settings.Default.ProductDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
