@@ -74,6 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProductDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProductPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductPriceForm.Designer.cs">
+      <DependentUpon>ProductPriceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="UnitsOnHandForm.Designer.cs">
       <DependentUpon>UnitsOnHandForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProductPriceForm.resx">
+      <DependentUpon>ProductPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductSearchForm.resx">
       <DependentUpon>ProductSearchForm.cs</DependentUpon>
     </EmbeddedResource>
