@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WilliamChamness_CPT_206_assignment2
+namespace William_Chamness_206_assignment2
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -23,7 +23,7 @@ namespace WilliamChamness_CPT_206_assignment2
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="ProductDB")]
-	public partial class ProductDataContext : System.Data.Linq.DataContext
+	public partial class ProductDBDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -35,31 +35,31 @@ namespace WilliamChamness_CPT_206_assignment2
     partial void DeleteProduct(Product instance);
     #endregion
 		
-		public ProductDataContext() : 
-				base(global::WilliamChamness_CPT_206_assignment2.Properties.Settings.Default.ProductDBConnectionString, mappingSource)
+		public ProductDBDataContext() : 
+				base(global::William_Chamness_206_assignment2.Properties.Settings.Default.ProductDBConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public ProductDataContext(string connection) : 
+		public ProductDBDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public ProductDataContext(System.Data.IDbConnection connection) : 
+		public ProductDBDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public ProductDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public ProductDBDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public ProductDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public ProductDBDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
