@@ -24,6 +24,7 @@ namespace William_Chamness_206_assignment2
             this.productTableAdapter.Fill(this.productDBDataSet.Product);
 
             productDBDataGrid.DataSource = db.Products.OrderBy((product) => product.Units_On_Hand);
+            this.ActiveControl = minimumUnitsTextbox;
         }
 
         private void searchButton_Click(object sender, EventArgs e)
