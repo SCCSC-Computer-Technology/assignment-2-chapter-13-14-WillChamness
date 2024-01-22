@@ -16,7 +16,7 @@ namespace WilliamChamness_CPT_206_assignment2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProductSearchForm());
+            Application.Run(new Form1());
         }
     }
 }
