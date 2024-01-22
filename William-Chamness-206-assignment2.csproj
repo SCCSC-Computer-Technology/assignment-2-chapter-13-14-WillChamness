@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -80,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitsOnHandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitsOnHandForm.Designer.cs">
+      <DependentUpon>UnitsOnHandForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ProductSearchForm.resx">
       <DependentUpon>ProductSearchForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UnitsOnHandForm.resx">
+      <DependentUpon>UnitsOnHandForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ProductDB.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>ProductDB.designer.cs</LastGenOutput>

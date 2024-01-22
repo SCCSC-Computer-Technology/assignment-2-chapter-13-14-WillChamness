@@ -1,7 +1,7 @@
 ﻿
 namespace William_Chamness_206_assignment2
 {
-    partial class ProductSearchForm
+    partial class UnitsOnHandForm
     {
         /// <summary>
         /// Required designer variable.
@@ -38,21 +38,16 @@ namespace William_Chamness_206_assignment2
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productDBDataSet = new William_Chamness_206_assignment2.ProductDBDataSet();
             this.productTableAdapter = new William_Chamness_206_assignment2.ProductDBDataSetTableAdapters.ProductTableAdapter();
-            this.productNumberLabel = new System.Windows.Forms.Label();
-            this.descriptionLabel = new System.Windows.Forms.Label();
-            this.productNumberTextbox = new System.Windows.Forms.TextBox();
-            this.descriptionTextbox = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
+            this.minimumUnitsLabel = new System.Windows.Forms.Label();
+            this.maximumUnitsLabel = new System.Windows.Forms.Label();
+            this.minimumUnitsTextbox = new System.Windows.Forms.TextBox();
+            this.maximumUnitsTextbox = new System.Windows.Forms.TextBox();
             this.clearButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.searchByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unitsOnHandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.priceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // productDBDataGrid
@@ -65,9 +60,9 @@ namespace William_Chamness_206_assignment2
             this.unitsOnHandDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.productDBDataGrid.DataSource = this.productBindingSource;
-            this.productDBDataGrid.Location = new System.Drawing.Point(76, 72);
+            this.productDBDataGrid.Location = new System.Drawing.Point(95, 25);
             this.productDBDataGrid.Name = "productDBDataGrid";
-            this.productDBDataGrid.Size = new System.Drawing.Size(606, 150);
+            this.productDBDataGrid.Size = new System.Drawing.Size(543, 150);
             this.productDBDataGrid.TabIndex = 0;
             // 
             // productNumberDataGridViewTextBoxColumn
@@ -108,47 +103,37 @@ namespace William_Chamness_206_assignment2
             // 
             this.productTableAdapter.ClearBeforeFill = true;
             // 
-            // productNumberLabel
+            // minimumUnitsLabel
             // 
-            this.productNumberLabel.AutoSize = true;
-            this.productNumberLabel.Location = new System.Drawing.Point(253, 262);
-            this.productNumberLabel.Name = "productNumberLabel";
-            this.productNumberLabel.Size = new System.Drawing.Size(87, 13);
-            this.productNumberLabel.TabIndex = 1;
-            this.productNumberLabel.Text = "Product Number:";
+            this.minimumUnitsLabel.AutoSize = true;
+            this.minimumUnitsLabel.Location = new System.Drawing.Point(276, 257);
+            this.minimumUnitsLabel.Name = "minimumUnitsLabel";
+            this.minimumUnitsLabel.Size = new System.Drawing.Size(78, 13);
+            this.minimumUnitsLabel.TabIndex = 1;
+            this.minimumUnitsLabel.Text = "Minimum Units:";
             // 
-            // descriptionLabel
+            // maximumUnitsLabel
             // 
-            this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(277, 288);
-            this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(63, 13);
-            this.descriptionLabel.TabIndex = 2;
-            this.descriptionLabel.Text = "Description:";
+            this.maximumUnitsLabel.AutoSize = true;
+            this.maximumUnitsLabel.Location = new System.Drawing.Point(273, 283);
+            this.maximumUnitsLabel.Name = "maximumUnitsLabel";
+            this.maximumUnitsLabel.Size = new System.Drawing.Size(81, 13);
+            this.maximumUnitsLabel.TabIndex = 3;
+            this.maximumUnitsLabel.Text = "Maximum Units:";
             // 
-            // productNumberTextbox
+            // minimumUnitsTextbox
             // 
-            this.productNumberTextbox.Location = new System.Drawing.Point(346, 259);
-            this.productNumberTextbox.Name = "productNumberTextbox";
-            this.productNumberTextbox.Size = new System.Drawing.Size(100, 20);
-            this.productNumberTextbox.TabIndex = 3;
+            this.minimumUnitsTextbox.Location = new System.Drawing.Point(360, 254);
+            this.minimumUnitsTextbox.Name = "minimumUnitsTextbox";
+            this.minimumUnitsTextbox.Size = new System.Drawing.Size(100, 20);
+            this.minimumUnitsTextbox.TabIndex = 2;
             // 
-            // descriptionTextbox
+            // maximumUnitsTextbox
             // 
-            this.descriptionTextbox.Location = new System.Drawing.Point(346, 285);
-            this.descriptionTextbox.Name = "descriptionTextbox";
-            this.descriptionTextbox.Size = new System.Drawing.Size(100, 20);
-            this.descriptionTextbox.TabIndex = 4;
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(713, 415);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
-            this.searchButton.TabIndex = 5;
-            this.searchButton.Text = "&Search";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            this.maximumUnitsTextbox.Location = new System.Drawing.Point(360, 280);
+            this.maximumUnitsTextbox.Name = "maximumUnitsTextbox";
+            this.maximumUnitsTextbox.Size = new System.Drawing.Size(100, 20);
+            this.maximumUnitsTextbox.TabIndex = 4;
             // 
             // clearButton
             // 
@@ -160,74 +145,47 @@ namespace William_Chamness_206_assignment2
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // cancelButton
+            // exitButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(551, 415);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 7;
-            this.cancelButton.Text = "&Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.exitButton.Location = new System.Drawing.Point(551, 415);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 5;
+            this.exitButton.Text = "E&xit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
+            // searchButton
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchByToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
+            this.searchButton.Location = new System.Drawing.Point(713, 415);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 7;
+            this.searchButton.Text = "&Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
-            // searchByToolStripMenuItem
-            // 
-            this.searchByToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.unitsOnHandToolStripMenuItem,
-            this.priceToolStripMenuItem});
-            this.searchByToolStripMenuItem.Name = "searchByToolStripMenuItem";
-            this.searchByToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.searchByToolStripMenuItem.Text = "Search By";
-            // 
-            // unitsOnHandToolStripMenuItem
-            // 
-            this.unitsOnHandToolStripMenuItem.Name = "unitsOnHandToolStripMenuItem";
-            this.unitsOnHandToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.unitsOnHandToolStripMenuItem.Text = "Units on hand";
-            this.unitsOnHandToolStripMenuItem.Click += new System.EventHandler(this.unitsOnHandToolStripMenuItem_Click);
-            // 
-            // priceToolStripMenuItem
-            // 
-            this.priceToolStripMenuItem.Name = "priceToolStripMenuItem";
-            this.priceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.priceToolStripMenuItem.Text = "Price";
-            // 
-            // ProductSearchForm
+            // UnitsOnHandForm
             // 
             this.AcceptButton = this.searchButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.cancelButton;
+            this.CancelButton = this.exitButton;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.descriptionTextbox);
-            this.Controls.Add(this.productNumberTextbox);
-            this.Controls.Add(this.descriptionLabel);
-            this.Controls.Add(this.productNumberLabel);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.maximumUnitsTextbox);
+            this.Controls.Add(this.minimumUnitsTextbox);
+            this.Controls.Add(this.maximumUnitsLabel);
+            this.Controls.Add(this.minimumUnitsLabel);
             this.Controls.Add(this.productDBDataGrid);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "ProductSearchForm";
-            this.Text = "Product Search Form";
-            this.Load += new System.EventHandler(this.ProductSearchForm_Load);
+            this.Name = "UnitsOnHandForm";
+            this.Text = "UnitsOnHandForm";
+            this.Load += new System.EventHandler(this.UnitsOnHandForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDBDataSet)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,17 +201,12 @@ namespace William_Chamness_206_assignment2
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitsOnHandDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label productNumberLabel;
-        private System.Windows.Forms.Label descriptionLabel;
-        private System.Windows.Forms.TextBox productNumberTextbox;
-        private System.Windows.Forms.TextBox descriptionTextbox;
-        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Label minimumUnitsLabel;
+        private System.Windows.Forms.Label maximumUnitsLabel;
+        private System.Windows.Forms.TextBox minimumUnitsTextbox;
+        private System.Windows.Forms.TextBox maximumUnitsTextbox;
         private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem searchByToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unitsOnHandToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem priceToolStripMenuItem;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button searchButton;
     }
 }
-

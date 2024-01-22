@@ -50,5 +50,11 @@ namespace William_Chamness_206_assignment2
         {
             this.Close();
         }
+
+        private void unitsOnHandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new UnitsOnHandForm();
+            form.ShowDialog();
+        }
     }
 }
