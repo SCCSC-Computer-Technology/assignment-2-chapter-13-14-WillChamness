@@ -56,5 +56,11 @@ namespace William_Chamness_206_assignment2
             var form = new UnitsOnHandForm();
             form.ShowDialog();
         }
+
+        private void priceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new ProductPriceForm();
+            form.ShowDialog();
+        }
     }
 }

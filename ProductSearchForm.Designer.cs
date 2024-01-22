@@ -202,6 +202,7 @@ namespace William_Chamness_206_assignment2
             this.priceToolStripMenuItem.Name = "priceToolStripMenuItem";
             this.priceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.priceToolStripMenuItem.Text = "Price";
+            this.priceToolStripMenuItem.Click += new System.EventHandler(this.priceToolStripMenuItem_Click);
             // 
             // ProductSearchForm
             // 
