@@ -1,0 +1,8 @@
+Code Review for William :)
+
+When prompting the user for input, the author's error handling messages give the user
+the help they need. If you want to be clearer, it might help to clarify to the user
+that they must provide a numerical value. I think this will help the code to be more
+user-friendly and simple to use.
+
+The author of this code chose to use many forms, but I used a single form in my code. After looking through the author's code, I believe that incorporating multiple forms is a more organized method. This method makes the code simpler to read and makes maintenance and future additions easier.
